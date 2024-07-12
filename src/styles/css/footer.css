@@ -1,0 +1,20 @@
+.small-image {
+  width: 50px; /* Đặt chiều rộng mong muốn */
+  height: auto; /* Đặt chiều cao tự động theo tỷ lệ khung hình */
+}
+.link-no-underline {
+  text-decoration: none; /* Loại bỏ gạch chân */
+  color: inherit; /* Giữ màu văn bản mặc định */
+  list-style-type: none;
+}
+ul {
+  list-style-type: none; /* Loại bỏ chấm đầu dòng */
+  padding-left: 0; /* Xóa khoảng cách bên trái */
+}
+ul li {
+  margin-bottom: 20px;
+}
+li{
+  color: rgb(97, 97, 97);
+
+}

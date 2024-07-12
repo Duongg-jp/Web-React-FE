@@ -1,16 +1,21 @@
 import { Link, Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Slide from "./components/Slide";
+import CardNew from "./components/CardNew";
+import BestSeller from "./components/BestSeller";
+import Banner from "./components/Banner";
+import Gallery from "./components/Gallery";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <nav>
-        <Link to="/sanpham">sanpham</Link>
-        <Link to="/lienhe">lienhe</Link>
-      </nav>
-      <Outlet />
+      <Slide/>
+      <CardNew/>
+      <BestSeller/>
+      <Banner/>
+      <Gallery/>
       <Footer />
     </div>
   );

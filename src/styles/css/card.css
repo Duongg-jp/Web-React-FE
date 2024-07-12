@@ -1,0 +1,15 @@
+.cardnew {
+  width: 350px;
+  height: 500px;
+}
+
+.custom-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:focus,
+a:active {
+  text-decoration: underline !important;
+  text-underline-offset: 10px;
+}

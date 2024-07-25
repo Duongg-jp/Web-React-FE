@@ -1,21 +1,13 @@
-import { Link, Outlet } from "react-router-dom";
+import React from 'react';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Slide from "./components/Slide";
-import CardNew from "./components/CardNew";
-import BestSeller from "./components/BestSeller";
-import Banner from "./components/Banner";
-import Gallery from "./components/Gallery";
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Slide/>
-      <CardNew/>
-      <BestSeller/>
-      <Banner/>
-      <Gallery/>
+      <Outlet />
       <Footer />
     </div>
   );

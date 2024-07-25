@@ -34,24 +34,24 @@ const CardNew = () => {
             </Link>
           </div>
         </div>
-        <div className="row justify-content-between ">
-          {[...Array(5)].map((_, index) => (
-            <div className="col-md-2 cardnew " key={index}>
-              <div className="">
-                <img
-                  src="https://pubcdn.ivymoda.com/files/product/thumab/400/2024/07/02/2b51690b9812cb839cc8cbd4a9dbcba9.webp"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <p className="card-text">5000</p>
-                </div>
+        <div className="row justify-content-between">
+          <div className="col-md-2 cardnew">
+            <div>
+              <Link to={'/productdetail'}>
+              <img 
+                src="https://pubcdn.ivymoda.com/files/product/thumab/400/2024/07/02/2b51690b9812cb839cc8cbd4a9dbcba9.webp"
+                className="card-img-top"
+                alt="..."
+              />
+              </Link>
+              <div className="card-body">
+                <p className="card-text">5000</p>
               </div>
             </div>
-          ))}
+          </div>
         </div>
         <div className="text-center mt-4">
-          <button className="btn ">Xem tất cả</button>
+          <button className="btn">Xem tất cả</button>
         </div>
       </div>
     </div>

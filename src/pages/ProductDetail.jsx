@@ -77,18 +77,22 @@ const ProductDetail = () => {
             <div class="container mt-5">
               <div class="d-flex align-items-center">
                 <p class="title-quantum">Số lượng</p>
-                <button class="btn-quantity">-</button>
-                <p class="quantum">1</p>
-                <button class="btn-quantity">+</button>
+                <div className=" title-and-btn d-flex">
+                  <button class="btn-quantity">-</button>
+                  <p class="quantum">1</p>
+                  <button class="btn-quantity">+</button>
+                </div>
               </div>
             </div>
-            <div class="d-flex">
-      <button class="btn btn-custom mr-2">Thêm vào giỏ</button>
-      <button class="btn btn-custom mr-2">Mua hàng</button>
-      <button class="btn btn-custom"><i class="fas fa-shopping-cart"></i></button>
-    </div>
+            <div class="d-flex mt-5">
+              <button class="btn btn-custom mr-2">Thêm vào giỏ</button>
+              <button class="btn btn-custom mr-2">Mua hàng</button>
+              <button class="btn btn-custom">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
           </div>
-          <div>Giới thiệu</div>
+          <div className="mt-5">Giới thiệu</div>
         </div>
       </div>
     </div>

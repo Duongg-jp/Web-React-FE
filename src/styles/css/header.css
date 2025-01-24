@@ -1,34 +1,37 @@
+:root {
+  --main-color: #000000;
+  --secondary-color: #333;
+  --border-color: #D1D2D4;
+  --placeholder-color: #949494;
+  --font-family: "Arial, sans-serif";
+  --font-family-playfair: 'Playfair Display', serif;
+}
+
 .search-input {
   padding: 10px 20px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: .5px solid #D1D2D4;
+  border: none;
+  border-bottom: 0.5px solid var(--border-color);
   outline: none;
   font-size: 16px;
-  font-family: "Arial, sans-serif";
-  color: #333;
+  font-family: var(--font-family);
+  color: var(--secondary-color);
   width: 60%;
 }
 
 .search-input::placeholder {
-  color: #949494;
-}
-
-.containerD {
-  margin: 0 5%;
+  color: var(--placeholder-color);
 }
 
 .link {
-  font-family: "Arial, sans-serif";
-  color: black;
+  font-family: var(--font-family);
+  color: var(--main-color);
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
 }
 
 .link:hover {
-  color: #333;
+  color: var(--secondary-color);
 }
 
 .brand-name a {
@@ -36,7 +39,7 @@
   font-family: italic;
   font-size: 28px;
   font-weight: bolder;
-  color: #000000;
+  color: var(--main-color);
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 0;
@@ -46,45 +49,46 @@
 }
 
 .brand-name:hover {
-  color: #000000;
+  color: var(--main-color);
 }
 
 .icon {
   font-size: 20px;
   margin: 0 10px;
+  color: var(--main-color);
+}
+
+ul, li, a {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
   color: #000000;
+}
+
+.font-playfair {
+  font-family: var(--font-family-playfair);
 }
 
 .sub-nav {
   position: absolute;
   background-color: #ffffff;
-  transition: all ease 0.5s;
+  transition: all 0.5s ease;
   z-index: -9;
   opacity: 0;
   width: 200px;
 }
+
 .item-navbar:hover .sub-nav {
   z-index: 9;
   opacity: 1;
 }
 
-ul li a {
-  text-decoration: none;
-  color: #000000;
-}
-ul, li {
-  margin: 0;
-}
-.font-playfair {
-  font-family: 'Playfair Display', serif;
-}
-
-.sub-menu-nav li a{
+.sub-menu-nav li a {
   padding: 20px;
 }
 
 .sub-menu-nav li h5,
-.sub-menu-nav li h5 li{
+.sub-menu-nav li h5 li {
   font-weight: bold;
   font-family: monospace;
 }
@@ -100,7 +104,7 @@ ul, li {
   padding: 0;
   margin: 0;
   z-index: 9;
-  border: 0.5px solid #D1D2D4;
+  border: 0.5px solid var(--border-color);
   width: 1300px;
   opacity: 0;
   visibility: hidden;

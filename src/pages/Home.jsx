@@ -7,7 +7,7 @@ import Gallery from "../components/Gallery";
 
 function Home() {
   return (
-    <div>
+    <div className="">
       <Slide />
       <CardNew />
       <BestSeller />

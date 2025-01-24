@@ -8,92 +8,74 @@ import googleplay from "../styles/img/imgfooter/imgfooterright/googleplay.png";
 
 const Footer = () => {
   return (
-    <div className="containerD mt-5">
-      <div class="d-flex col-12 ">
-        <div className="col-2">
-          <div className="d-flex">
-            <ul>YANG ELEGANCE</ul>
-            <ul>
-              <img src={dmca} alt="" className="small-image" />
-            </ul>
-            <ul>
-              <img src={imgcongthuong} alt="" className="small-image" />
-            </ul>
+    <footer className="footer-container mt-5">
+      <div className="footer-content">
+        {/* Cột 1 */}
+        <div className="footer-col">
+          <h3>YANG ELEGANCE</h3>
+          <div className="footer-certifications">
+            <img src={dmca} alt="DMCA" className="small-image" />
+            <img src={imgcongthuong} alt="Bộ Công Thương" className="small-image" />
           </div>
-
-          <div className="d-flex justify-content-around ">
-            <ul>
-              <i className="fab fa-facebook"></i>
-            </ul>
-            <ul>
-              <i className="fab fa-google"></i>
-            </ul>
-            <ul>
-              <i className="fab fa-instagram"></i>
-            </ul>
-            <ul>
-              <i className="fab fa-youtube"></i>
-            </ul>
-            <ul>
-              <i className="fab fa-pinterest"></i>
-            </ul>
+          <div className="footer-socials">
+            <i className="fab fa-facebook"></i>
+            <i className="fab fa-google"></i>
+            <i className="fab fa-instagram"></i>
+            <i className="fab fa-youtube"></i>
+            <i className="fab fa-pinterest"></i>
           </div>
-
-          <div>
-            <h4>HOTLINE: 0999.999.999</h4>
-          </div>
+          <p className="footer-hotline">HOTLINE: 0999.999.999</p>
         </div>
-        <div className="col-8">
-  <div className="d-flex justify-content-around">
-    <div>
-      <ul>
-        <><h4>Giới thiệu</h4></>
-        <li><Link to="/ivy-moda" className="link-no-underline">Về IVY moda</Link></li>
-        <li><Link to="/tuyen-dung" className="link-no-underline">Tuyển dụng</Link></li>
-        <li><Link to="/he-thong-cua-hang" className="link-no-underline">Hệ thống cửa hàng</Link></li>
-      </ul>
-    </div>
-    <div className="">
-      <ul>
-        <><h4>Dịch vụ khách hàng</h4></>
-        <li><Link to="/chinh-sach-dieu-khoan" className="link-no-underline">Chính sách điều khoản</Link></li>
-        <li><Link to="/huong-dan-mua-hang" className="link-no-underline">Hướng dẫn mua hàng</Link></li>
-        <li><Link to="/chinh-sach-thanh-toan" className="link-no-underline">Chính sách thanh toán</Link></li>
-        <li><Link to="/chinh-sach-doi-tra" className="link-no-underline">Chính sách đổi trả</Link></li>
-        <li><Link to="/chinh-sach-bao-hanh" className="link-no-underline">Chính sách bảo hành</Link></li>
-        <li><Link to="/chinh-sach-giao-nhan" className="link-no-underline">Chính sách giao nhận vận chuyển</Link></li>
-        <li><Link to="/chinh-sach-the-thanh-vien" className="link-no-underline">Chính sách thẻ thành viên</Link></li>
-        <li><Link to="/q-a" className="link-no-underline">Q&A</Link></li>
-      </ul>
-    </div>
-    <div>
-      <ul>
-        <><h4>Liên hệ</h4></>
-        <li><Link to="/hotline" className="link-no-underline">Hotline</Link></li>
-        <li><Link to="/email" className="link-no-underline">Email</Link></li>
-        <li><Link to="/messenger" className="link-no-underline">Messenger</Link></li>
-        <li><Link to="/live-chat" className="link-no-underline">Live Chat</Link></li>
-      </ul>
-    </div>
-  </div>
-</div>
 
+        {/* Cột 2 */}
+        <div className="footer-col">
+          <h4>Giới thiệu</h4>
+          <ul>
+            <li><Link to="/ivy-moda">Về IVY moda</Link></li>
+            <li><Link to="/tuyen-dung">Tuyển dụng</Link></li>
+            <li><Link to="/he-thong-cua-hang">Hệ thống cửa hàng</Link></li>
+          </ul>
+        </div>
 
+        {/* Cột 3 */}
+        <div className="footer-col">
+          <h4>Dịch vụ khách hàng</h4>
+          <ul>
+            <li><Link to="/chinh-sach-dieu-khoan">Chính sách điều khoản</Link></li>
+            <li><Link to="/huong-dan-mua-hang">Hướng dẫn mua hàng</Link></li>
+            <li><Link to="/chinh-sach-thanh-toan">Chính sách thanh toán</Link></li>
+            <li><Link to="/chinh-sach-doi-tra">Chính sách đổi trả</Link></li>
+            <li><Link to="/chinh-sach-bao-hanh">Chính sách bảo hành</Link></li>
+            <li><Link to="/chinh-sach-giao-nhan">Chính sách giao nhận</Link></li>
+          </ul>
+        </div>
 
-        <div className="col-2">
-          <div>
-            <h5>Nhận thông tin các chương trình của IVY moda</h5>
-            <input type="text" />
-            <button>Đăng kí</button>
+        {/* Cột 4 */}
+        <div className="footer-col">
+          <h4>Liên hệ</h4>
+          <ul>
+            <li><Link to="/hotline">Hotline</Link></li>
+            <li><Link to="/email">Email</Link></li>
+            <li><Link to="/messenger">Messenger</Link></li>
+            <li><Link to="/live-chat">Live Chat</Link></li>
+          </ul>
+        </div>
+
+        {/* Cột 5 */}
+        <div className="footer-col">
+          <h4>Đăng ký nhận thông tin</h4>
+          <div className="footer-subscribe">
+            <input type="text" placeholder="Nhập email của bạn" />
+            <button>Đăng ký</button>
           </div>
-          <div>
-            <h4>Download App</h4>
-            <img src={appstore} alt="appstore" />
-            <img src={googleplay} alt="googleplay" />
+          <h4>Tải App</h4>
+          <div className="footer-apps">
+            <img src={appstore} alt="App Store" />
+            <img src={googleplay} alt="Google Play" />
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

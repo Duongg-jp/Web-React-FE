@@ -53,3 +53,118 @@
     border-radius: 40% 0% 0% 0% / 0% 0% 10% 0%;
 
   }
+
+  .size {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .size:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .size.selected {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+  }
+  
+  .sub-image-detail img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .sub-image-detail img:hover {
+    transform: scale(1.1); /* Hiệu ứng phóng to khi hover */
+  }
+  /* Container cho phần thông tin sản phẩm */
+.product-info h1 {
+  font-size: 2rem; /* Kích thước chữ lớn */
+  font-weight: bold;
+  color: #333; /* Màu chữ đậm */
+  margin-bottom: 10px; /* Khoảng cách dưới */
+}
+
+.product-info p {
+  font-size: 1rem; /* Kích thước chữ vừa */
+  color: #666; /* Màu chữ trung tính */
+  margin-bottom: 15px; /* Khoảng cách dưới */
+}
+
+.product-info h3 {
+  font-size: 1.5rem; /* Kích thước chữ lớn hơn */
+  font-weight: 600;
+  color: #c0392b; /* Màu đỏ nhấn mạnh giá */
+  margin-bottom: 15px; /* Khoảng cách dưới */
+}
+
+.product-info h3.color {
+  color: #444; /* Màu chữ trung tính cho thông tin màu sắc */
+  font-size: 1.2rem;
+  margin-bottom: 20px; /* Khoảng cách dưới */
+}
+
+/* Tăng khoảng cách và căn chỉnh */
+.product-info {
+  line-height: 1.6; /* Tăng khoảng cách dòng */
+  text-align: left; /* Căn trái */
+}
+
+/* Container tổng */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Tiêu đề */
+.title-quantum {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-right: 20px;
+}
+
+/* Vùng chứa số lượng và nút */
+.title-and-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Khoảng cách giữa các thành phần */
+}
+
+/* Nút tăng/giảm số lượng */
+.btn-quantity {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-quantity:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Số lượng */
+.quantum {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  min-width: 30px;
+  text-align: center;
+}
+
+.btn-border-custom{
+  border: 0.5px solid #f20000;
+  border-radius: 10% 0 10% 0 / 40% 0 40% 0;
+
+}

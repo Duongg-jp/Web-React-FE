@@ -1,20 +1,101 @@
-.small-image {
-  width: 50px; /* Đặt chiều rộng mong muốn */
-  height: auto; /* Đặt chiều cao tự động theo tỷ lệ khung hình */
+.footer-container {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  color: #616161;
+  font-family: Arial, sans-serif;
 }
-.link-no-underline {
-  text-decoration: none; /* Loại bỏ gạch chân */
-  color: inherit; /* Giữ màu văn bản mặc định */
-  list-style-type: none;
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
 }
-ul {
-  list-style-type: none; /* Loại bỏ chấm đầu dòng */
-  padding-left: 0; /* Xóa khoảng cách bên trái */
+
+.footer-col {
+  flex: 1 1 200px;
+  min-width: 200px;
 }
-ul li {
+
+.footer-col h3,
+.footer-col h4 {
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #616161;
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #000;
+}
+
+.footer-certifications img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.footer-socials i {
+  font-size: 20px;
+  color: #616161;
+  transition: color 0.3s;
+}
+
+.footer-socials i:hover {
+  color: #000;
+}
+
+.footer-hotline {
+  font-weight: bold;
+  color: #000;
+}
+
+.footer-subscribe {
+  display: flex;
+  gap: 10px;
   margin-bottom: 20px;
 }
-li{
-  color: rgb(97, 97, 97);
 
+.footer-subscribe input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.footer-subscribe button {
+  background-color: #000;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.footer-subscribe button:hover {
+  background-color: #444;
+}
+
+.footer-apps img {
+  width: 120px;
+  margin-right: 10px;
 }

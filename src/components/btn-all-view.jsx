@@ -1,12 +1,19 @@
 import React from "react";
-import  "../styles/css/btnAllView.css";
+import "../styles/css/btn-all-view.css";
 
-const btnAllView = () => {
-  return;
-  <button class="btn-learn-more">
-    <span class="btn-circle" aria-hidden="true">
-      <span class="btn-icon btn-arrow"></span>
-    </span>
-    <span class="btn-text">Learn More</span>
-  </button>;
+const BtnAllView = () => {
+  return (
+    <div
+      className="d-flex justify-content-end align-items-center"
+    >
+      <button className="btn-learn-more">
+        <span className="btn-circle" aria-hidden="true">
+          <span className="btn-icon btn-arrow"></span>
+        </span>
+        <span className="btn-text">Xem tất cả</span>
+      </button>
+    </div>
+  );
 };
+
+export default BtnAllView;

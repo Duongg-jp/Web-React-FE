@@ -1,6 +1,27 @@
 .cardnew {
-  width: 294px;
-  height: 440px;
+  border: 1px solid #ccc;
+  padding: 10px; /* Thêm padding để tránh nội dung sát vào viền */
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: contain; 
+}
+
+.custom-card-body {
+  padding: 10px;
+}
+
+.name-product {
+  overflow: hidden; /* Ngăn tràn văn bản dài */
+  text-overflow: ellipsis; /* Thêm dấu "..." nếu tên quá dài */
+  white-space: nowrap;
+}
+
+.price-product-sale,
+.price-product {
+  white-space: nowrap; /* Ngăn các giá bị xuống dòng */
 }
 
 .custom-link {

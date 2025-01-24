@@ -1,6 +1,6 @@
 .cardnew {
-  width: 350px;
-  height: 500px;
+  width: 294px;
+  height: 440px;
 }
 
 .custom-link {
@@ -8,3 +8,62 @@
   color: #000000;
 }
 
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.custom-checkbox {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+  transition: transform 100ms ease-in-out;
+}
+
+.custom-checkmark {
+  width: 1em;
+  transition: 100ms;
+  animation: custom-dislike-effect 400ms ease;
+}
+
+.custom-checkbox input:checked ~ .custom-checkmark path {
+  fill: #ff5353;
+  stroke-width: 0;
+}
+
+.custom-checkbox input:checked ~ .custom-checkmark {
+  animation: custom-like-effect 400ms ease;
+}
+
+.custom-checkbox:hover {
+  transform: scale(1.1);
+}
+
+@keyframes custom-like-effect {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes custom-dislike-effect {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

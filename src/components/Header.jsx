@@ -125,7 +125,6 @@ const Header = () => {
                 className="search-input"
                 placeholder="Search..."
               />
-              <i className="fa-solid fa-headphones icon"></i>
               <Link to="/dang-ki">
                 <i className="fa-regular fa-user icon"></i>
               </Link>
